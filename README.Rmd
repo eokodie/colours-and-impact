@@ -1,0 +1,114 @@
+---
+output:
+  github_document:
+    html_preview: true #false
+---
+<!-- README.md is generated from README.Rmd. Please edit that file --> 
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+## colours & impact [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+A curated list of awesome data visualization resources with a splash of R. Inspired by [Awesome R](https://awesome-r.com/). 
+
+Arranged in no particular order.
+
+## Colour theory & chart design
+
++ [Subtleties of Color](https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/)- Robert Simmon (2013)
++ [Make grey your best friend](http://www.visualisingdata.com/2015/01/make-grey-best-friend/) - Andy Kirk (2015)
++ [Viz Palette for Data Visualization Color](https://towardsdatascience.com/viz-palette-for-data-visualization-color-8e678d996077) - Elijah Meeks (2018)
++ [How to Optimize Charts For Color Blind Readers](https://venngage.com/blog/color-blind-friendly-palette/) - Tom Jager (2017)
++ [The Do's And Don'ts of Infographic Color Selection](https://venngage.com/blog/infographic-design-the-dos-and-donts-of-color-selection/) - Ryan McCready (2016)
++ [10 Do's and Don'ts of Infographic Chart Design](https://venngage.com/blog/chart-design/) - Midori Nediger (2018)
++ [5 Data Visualization Tips to Guide Your Design Process](https://venngage.com/blog/data-visualization-tips/) -  Jan Willem Tulp (2017)
++ [What to consider when choosing colors for data visualization](https://blog.datawrapper.de/colors/) - Lisa Charlotte Rost (2018)
++ [The Power of The Palette: Why Color is Key in Data Visualization and How to Use It](https://theblog.adobe.com/the-power-of-the-palette-why-color-is-key-in-data-visualization-and-how-to-use-it/) - Alan Wilson (2017)
+
+## Web tools
+
++ [colororacle](http://colororacle.org/usage.html) - Colour-blindness simulator
++ [Canva Color Palette Generator](https://www.canva.com/color-palette/) - creates a palette based on the five main colours of any uploaded image
++ [Material palette](https://www.materialpalette.com/) - converts any two colours into a full colour palette  
++ [Colorgorical](http://vrl.cs.brown.edu/color) - tool by Connor Gramazio for creating categorical information visualization colour palettes
++ [Colorbrewer](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) - tool for choosing choropleth map color schemes, based on Cynthia Brewer's research
++ [Adobe Color CC ](https://color.adobe.com/create/color-wheel/) - Adobe's tool for creating categorical palettes
++ [i want hue](http://tools.medialab.sciences-po.fr/iwanthue/) - tool by Mathieu Jacomy for optimising colours and palettes 
++ [colorfavs](http://www.colorfavs.com) - tool to create and discover colours and Palettes
+
+
+## Podcasts
+
++ [Data Stories](http://datastori.es/) - data visualization with Enrico Bertini and Moritz Stefaner 
++ [policyviz](https://policyviz.com/podcast/) - helping listeners better communicate their research, analysis, and ideas
++ [The Present Beyond Measure](http://leapica.com/podcast/) - bi-weekly podcast at the intersection of analytics, data visualization, and digital analytics
++ [storytelling with data](http://www.storytellingwithdata.com/podcast/) - covers topics related to data storytelling, better presentations, and all things data visualization
+
+## Websites
+
++ [Presentaion Zen](http://www.presentationzen.com) - Garr Reynolds's popular website on how to design and deliver powerful presentations
++ [information is beautiful](https://informationisbeautiful.net) -  David McCandless's site dedicated to helping people make clearer, more informed decisions about the world
++ [visual complexity](http://www.visualcomplexity.com/vc/) - unified resource space for anyone interested in the visualization of complex networks
++ [awwwards](https://www.awwwards.com/websites/data-visualization/) - a meeting point, where digital design professionals from across the globe find inspiration, impart knowledge and experience, connect, and share constructive, respectful critiques
++ [Gapminder](https://www.gapminder.org) - Swedish independent foundation which fights misconceptions about global development and promotes a fact-based worldview
++ [Chart porn](http://chartporn.org/) - curates the cool data analysis work being done in the world
+
+## R packages 
+
++ [scico](https://github.com/thomasp85/scico) - Thomas Lin Pedersen's R interface to Fabio Crameri's colour palettes based on the Scientific Colour-Maps
++ [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html) - Erich Neuwirth's R implementation of Cynthia Brewer's [colobrewer](http://colorbrewer2.org)
++ [paletter](https://github.com/AndreaCirilloAC/paletter) - Andrea Cirillo's package for creating an optimised palette from a custom image
++ [viridis](https://github.com/sjmgarnier/viridis) - Simon Garnier's R Implementation of the Matplolib 'viridis' color map
++ [ggThemeAssist](https://github.com/calligross/ggthemeassist) - an RStudio add-in which provides a GUI for editing ggplot2 themes
+
+You can search Github for more R packages using:
+```{r,  eval=FALSE}
+library(tidyverse)
+# key word search with "palette", "theme" etc.
+key_word = "palette"
+gh_pkgs <- glue::glue("http://rpkg-api.gepuro.net/rpkg?q={key_word}") %>% 
+  jsonlite::fromJSON() 
+```
+
+You can search CRAN using:
+```{r, eval=FALSE}
+cran_pkgs <- tools::CRAN_package_db()
+cran_pkgs <- cran_pkgs[, !duplicated(colnames(cran_pkgs))]
+
+cran_pkgs %>% 
+  filter(str_detect(Description, "palette") == TRUE) %>% 
+  select(Package, Date, Author, Title, Description)
+```
+
+
+## Books 
+
++ [The Visual Display of Quantitative Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142) - Edward R.Tufte
++ [Storytelling with Data: A Data Visualization Guide for Business Professionals](https://www.amazon.co.uk/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257) - Cole Nussbaumer Knaflic 
++ [Good Charts The HBR Guide to Making Smarter, More Persuasive Data Visualizations](https://www.amazon.co.uk/Good-Charts-Smarter-Persuasive-Visualizations-ebook/dp/B01BO6QM9Q/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) - Scott Berinato 
++ [The Truthful Art](https://www.amazon.co.uk/Truthful-Art-Data-Charts-Communication-ebook/dp/B01BLN09U0/ref=pd_sim_351_5?_encoding=UTF8&psc=1&refRID=3N1YB3PRH0ANZDT42K56) - Albert Cairo
++ [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://www.amazon.co.uk/Visualize-This-FlowingData-Visualization-Statistics-ebook/dp/B005CCT19M/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) - Nathan Yau
++ [Information Graphics](https://www.amazon.co.uk/Information-Graphics-Sandra-Rendgen/dp/3836528797) - Sandra Rendgen, Julius Wiedemann
++ [Visual Thinking for Design](https://www.amazon.co.uk/Visual-Thinking-Kaufmann-Interactive-Technologies-ebook/dp/B006NVY448/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) - Colin Ware
++ [Semiology of Graphics: Diagrams, Networks, Maps](https://www.amazon.co.uk/Semiology-Graphics-Diagrams-Networks-Maps/dp/1589482611) - Jacques Berti
++ [Cartographies of Time: A History of the Timeline](https://www.amazon.co.uk/dp/B00E8W7NGA/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) - Daniel Rosenberg and Anthony Grafton 
++ [R for Data Science](http://r4ds.had.co.nz/graphics-for-communication.html) - the graphics for communication chapter of Garrett Grolemund and Hadley Wicham's book
+
+## Awesome list of curated awesomeness
+
++ [awesome-visualization-research](https://github.com/mathisonian/awesome-visualization-research)
++ [awesome-dataviz](https://github.com/fasouto/awesome-dataviz)
++ [awesome-charting](https://github.com/zingchart/awesome-charting)
++ [Colorful](https://github.com/Siddharth11/Colorful)
++ [r-color-palettes](https://github.com/EmilHvitfeldt/r-color-palettes)
+
+### Meta
+
++ Feel free to contribute by creating a [pull request](https://github.com/eokodie/colours-and-impact/pulls) 
++ This repository is licensed under the MIT License (see the LICENSE file).
