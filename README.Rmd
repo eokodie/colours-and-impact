@@ -92,7 +92,7 @@ cran_pkgs %>%
 + [The Visual Display of Quantitative Information](https://www.amazon.co.uk/Visual-Display-Quantitative-Information/dp/0961392142) - Edward R.Tufte
 + [Storytelling with Data: A Data Visualization Guide for Business Professionals](https://www.amazon.co.uk/Storytelling-Data-Visualization-Business-Professionals/dp/1119002257) - Cole Nussbaumer Knaflic 
 + [Good Charts The HBR Guide to Making Smarter, More Persuasive Data Visualizations](https://www.amazon.co.uk/Good-Charts-Smarter-Persuasive-Visualizations-ebook/dp/B01BO6QM9Q/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) - Scott Berinato 
-+ [The Truthful Art](https://www.amazon.co.uk/Truthful-Art-Data-Charts-Communication-ebook/dp/B01BLN09U0/ref=pd_sim_351_5?_encoding=UTF8&psc=1&refRID=3N1YB3PRH0ANZDT42K56) - Albert Cairo
++ [The Truthful Art](https://www.amazon.co.uk/Truthful-Art-Data-Charts-Communication-ebook/dp/B01BLN09U0/ref=pd_sim_351_5?_encoding=UTF8&psc=1&refRID=3N1YB3PRH0ANZDT42K56) - Alberto Cairo
 + [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](https://www.amazon.co.uk/Visualize-This-FlowingData-Visualization-Statistics-ebook/dp/B005CCT19M/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) - Nathan Yau
 + [Information Graphics](https://www.amazon.co.uk/Information-Graphics-Sandra-Rendgen/dp/3836528797) - Sandra Rendgen, Julius Wiedemann
 + [Visual Thinking for Design](https://www.amazon.co.uk/Visual-Thinking-Kaufmann-Interactive-Technologies-ebook/dp/B006NVY448/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=) - Colin Ware
